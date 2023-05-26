@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>
+      Base Page Title
+  </title>
+
+  <base href="https://nicholasmakhija.github.io/sandbox/" />
+
+	<link rel="shortcut icon" type="image/png" href="favicon-16x16.png?v=bust" sizes="16x16">
+	<link rel="icon" type="image/png" href="favicon-32x32.png?v=bust" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-96x96.png?v=bust" sizes="96x96">
+
+	<meta http-equiv="cleartype" content="on">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<meta property="og:locale" content="en_AU">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Name of website">
+	<meta property="og:description" content="Description of website">
+	<meta property="og:url" content="//domain-name.ext/">
+	<meta property="og:site_name" content="Name of website">
+	<meta property="og:image:secure_url" content="//domain-name.ext/assets/og-image.jpg">
+	<meta property="og:image" content="//domain-name.ext/assets/og-image.jpg">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link type="text/css" rel="stylesheet" href="css/styles.css" /> 
+
+</head>
+
+<body>
+  <div id="root">
+    <div class="login__wrapper">
+      <div class="login__box">
+        <div class="logo">
+          <a href="/">
+            LOGO
+          </a>
+        </div>
+    
+        <form id="login-form" class="login__form js-login__form" method="post" action="">
+          <div class="fc__wrapper">
+            <label for="username" class="fc__label">Username</label>
+            <input
+              id="username"
+              class="fc__input"
+              type="text"
+              name="username"
+            >
+            <span class="fc__error">Please enter username</span>
+          </div>
+    
+          <fieldset class="fc__fieldset">
+            <legend class="fc__title">Login using</legend>
+    
+            <div class="fc__group">
+              <div class="fc__wrapper">
+                <input
+                  id="method-password"
+                  class="fc__input"
+                  type="radio"
+                  name="sign-in-method"
+                  value="password"
+                  checked
+                >
+                <label class="fc__label" for="method-password">password</label>
+              </div>
+    
+              <div class="fc__wrapper">
+                <input
+                  id="method-code"
+                  class="fc__input"
+                  type="radio"
+                  name="sign-in-method"
+                  value="security-code"
+                >
+                <label class="fc__label" for="method-code">security code</label>
+              </div>
+            </div>
+          </fieldset>
+    
+          <div class="fc__wrapper" data-login="password">
+            <label for="password" class="fc__label">Password</label>
+            <input
+              id="password"
+              class="fc__input"
+              type="password"
+              name="password"
+            >
+            <span class="fc__error">Please enter password</span>
+          </div>
+    
+          <div class="fc__wrapper fc--hidden" data-login="security-code">
+            <label for="security-code" class="fc__label">Security code</label>
+            <input
+              id="security-code"
+              class="fc__input"
+              type="text"
+              name="security-code"
+              disabled
+            >
+            <span class="fc__error">Please enter security code</span>
+          </div>
+    
+          <button class="button button--form">
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="dev"></div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
