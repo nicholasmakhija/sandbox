@@ -544,6 +544,250 @@
 
     <div class="map component"></div>
 
+    <div class="table__wrapper">
+      <div class="table__scroll">
+        <table class="table__element">
+          <thead>
+            <tr>
+              <th>
+                <button
+                  class="table__action"
+                  aria-label="click to mark selected items as read"
+                  disabled
+                >
+                  <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="MarkAsUnread"><path d="M18.83 7h-2.6L10.5 4 4 7.4V17c-1.1 0-2-.9-2-2V7.17c0-.53.32-1.09.8-1.34L10.5 2l7.54 3.83c.43.23.73.7.79 1.17zM20 8H7c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2zm0 3.67L13.5 15 7 11.67V10l6.5 3.33L20 10v1.67z"></path></svg>
+                </button>
+              </th>
+              <th>
+                <button
+                  class="table__action"
+                  aria-label="click to send selected items"
+                  disabled
+                >
+                  <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="Send"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                </button>
+              </th>
+              <th>
+                Timestamp
+                <button
+                  class="table__sort"
+                  aria-label="click to sort ascending / descending"
+                ></button>
+              </th>
+              <th>
+                Name
+                <button
+                  class="table__sort"
+                  aria-label="click to sort ascending / descending"
+                ></button>
+              </th>
+              <th>
+                Type
+                <button
+                  class="table__sort"
+                  aria-label="click to sort ascending / descending"
+                ></button>
+              </th>
+              <th>
+                Priority
+                <button
+                  class="table__sort"
+                  aria-label="click to sort ascending / descending"
+                ></button>
+              </th>
+              <th>Short Description</th>
+              <th>Long Description</th>
+            </tr>
+          </thead>
+    
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>22-08-12 15:01</td>
+              <td>TBY_Fire</td>
+              <td>Emergency</td>
+              <td>Critical</td>
+              <td>Emergency</td>
+              <td>Emergency long description will appear here</td>
+            </tr>
+    
+            <tr class="unread">
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>22-02-12 14:04</td>
+              <td>FSD_Alarm</td>
+              <td>Alarm</td>
+              <td>High</td>
+              <td>Alarm Event 1</td>
+              <td>Alarm long description will appear here</td>
+            </tr>
+    
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>22-02-12 16:01</td>
+              <td>SOP_Alarm</td>
+              <td>Alarm</td>
+              <td>Medium</td>
+              <td>Alarm Event 2</td>
+              <td>Alarm long description will appear here</td>
+            </tr>
+    
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 04:01</td>
+              <td>SOP_Flt</td>
+              <td>Fault</td>
+              <td>Low</td>
+              <td>Fault Event 1</td>
+              <td>Fault notification long description</td>
+            </tr>
+    
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 03:21</td>
+              <td>FSD_Test</td>
+              <td>Schedule</td>
+              <td>Low</td>
+              <td>Schedule Event 1</td>
+              <td>Schedule event long description</td>
+            </tr>
+    
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 11:24</td>
+              <td>TurnA_On</td>
+              <td>Lighting</td>
+              <td>Info</td>
+              <td>Lighting Event 1</td>
+              <td>Lighting event long description</td>
+            </tr>
+    
+            <tr>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 03:55</td>
+              <td>UserLog</td>
+              <td>Login</td>
+              <td>Info</td>
+              <td>Login Attempt 1</td>
+              <td>Login attempt long description goes here</td>
+            </tr>
+    
+            <tr class="unread">
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 14:01</td>
+              <td>Sys1</td>
+              <td>System</td>
+              <td>High</td>
+              <td>System Reboot</td>
+              <td>System reboot long description goes here</td>
+            </tr>
+    
+            <tr class="unread">
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 14:01</td>
+              <td>BWD_Stat1</td>
+              <td>Status</td>
+              <td>Medium</td>
+              <td>Status Report</td>
+              <td>Status report long description</td>
+            </tr>
+    
+            <tr class="unread">
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>
+                <input type="checkbox" value="">
+              </td>
+              <td>23-02-12 14:01</td>
+              <td>Ctrl44_On</td>
+              <td>Control</td>
+              <td>Info</td>
+              <td>Controller Event</td>
+              <td>Controller event long description goes here</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <div class="table__footer">
+        <div class="table__search">
+          <label for="search" class="fc__label fc--hidden">Search</label>
+          <input
+            id="search"
+            class="fc__input"
+            type="text"
+            placeholder="Search table..."
+          >
+        </div>
+    
+        <div class="table__paging">
+          <button
+            class="button button--square table__button"
+            aria-label="click here to go to previous page"
+            disabled
+          >
+            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="ChevronLeft"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
+          </button>
+    
+          <button class="button button--square active table__button active" disabled>1</button>
+          <button class="button button--square table__button">2</button>
+          <button class="button button--square table__button">3</button>
+    
+          <button
+            class="button button--square table__button"
+            aria-label="click here to go to next page"
+          >
+            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="ChevronRight"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <style>
       .demo .box__link:last-child {
         width: calc(100% - 3.5rem);
