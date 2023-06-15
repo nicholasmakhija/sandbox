@@ -544,8 +544,638 @@
 
     <div class="map component"></div>
 
+    <script>
+      var filtersLocationA = {
+        id: '956868b4-023a-40ee-9ec9-5f89a157cbcb',
+        label: 'Filter Type',
+        options: [
+          {
+            value: 'to',
+            text: 'To',
+            children: {
+              id: 'd07c5893-3a43-40b9-b417-5d52ceeed1ed',
+              label: 'To Location',
+              options: [
+                {
+                  value: "theBays",
+                  text: "The Bays",
+                  children: {
+                    id: '070ce204-d866-48ff-be60-5ca793ade367',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "fiveDocks",
+                  text: "Five Docks",
+                  children: {
+                    id: '6f0dde73-6eae-47c5-bb75-bcf77829ae1d',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelC",
+                        text: "Tunnel C",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "burwoodNorth",
+                  text: "Burwood North",
+                  children: {
+                    id: '3334ec9e-f6bd-4508-8a9e-ed8c9905969a',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "northStrathfield",
+                  text: "North Strathfield",
+                  children: {
+                    id: '61938d21-f639-4346-bcad-d72d287757b2',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "olympicPark",
+                  text: "Olympic Park",
+                  children: {
+                    id: '8948cfa1-6112-4bff-83f0-f92960ab88e7',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        value: "tunnelC",
+                        text: "Tunnel C",
+                        children: {
+                          id: '39a30cde-a23f-4539-b41b-7fcd67a6e4ea',
+                          label: 'Section',
+                          options: [
+                            {
+                              value: "1",
+                              text: "1",
+                              children: undefined
+                            },
+                            {
+                              value: "2",
+                              text: "2",
+                              children: undefined
+                            },
+                            {
+                              value: "3",
+                              text: "3",
+                              children: undefined
+                            },
+                            {
+                              value: "4",
+                              text: "4",
+                              children: undefined
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+              ]
+            }
+          },
+          {
+            value: 'from',
+            text: 'From',
+            children: {
+              id: 'd07c5893-3a43-40b9-b417-5d52ceeed1ed',
+              label: 'From Location',
+              options: [
+                {
+                  value: "olympicPark",
+                  text: "Olympic Park",
+                  children: {
+                    id: '8948cfa1-6112-4bff-83f0-f92960ab88e7',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: undefined
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: undefined
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "burwoodNorth",
+                  text: "Burwood North",
+                  children: {
+                    id: '7cb14f4c-da39-4f7f-917c-0805d0abd438',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: undefined
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: undefined
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "fiveDocks",
+                  text: "Five Docks",
+                  children: {
+                    id: '6f0dde73-6eae-47c5-bb75-bcf77829ae1d',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: undefined
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: undefined
+                      }
+                    ]
+                  }
+                },
+                {
+                  value: "northStrathfield",
+                  text: "North Strathfield",
+                  children: {
+                    id: '61938d21-f639-4346-bcad-d72d287757b2',
+                    label: 'Tunnel',
+                    options: [
+                      {
+                        value: "tunnelA",
+                        text: "Tunnel A",
+                        children: undefined
+                      },
+                      {
+                        value: "tunnelB",
+                        text: "Tunnel B",
+                        children: undefined
+                      }
+                    ]
+                  }
+                },
+              ]
+            }
+          }
+        ]
+      }
+    </script>
     <div
-      class="table__wrapper js-table"
+      class="component filters js-filters"
+      data-property-name="filtersLocationA"
+    >
+    
+      <div class="row filters__row">
+        <div class="col-md-6 col-lg-3 filter__col">
+          <button class="filters__button button button--form button--inline" disabled>
+            <span class="button__text">Show Location</span>
+            <span class="button__icon">
+              <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="GpsNotFixed"><path d="M20.94 11c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var filtersDemo = {
+        id: 'cat-gender',
+        label: 'Cat Gender',
+        options: [
+          {
+            value: 'male',
+            text: 'Male',
+            children: {
+              id: 'cat-breed',
+              label: 'Cat Breed',
+              options: [
+                {
+                  value: 'siamese',
+                  text: 'Siamese',
+                  children: undefined
+                },
+                {
+                  value: 'Persian',
+                  text: 'Persian',
+                  children: undefined
+                },
+                {
+                  value: 'scottishFold',
+                  text: 'Scottish Fold',
+                  children: undefined
+                },
+                {
+                  value: 'ragdoll',
+                  text: 'Ragdoll',
+                  children: undefined
+                },
+                {
+                  value: 'bengal',
+                  text: 'Bengal',
+                  children: undefined
+                }
+              ]
+            }
+          },
+          {
+            value: 'female',
+            text: 'Female',
+            children: {
+              id: 'cat-breed',
+              label: 'Cat Breed',
+              options: [
+                {
+                  value: 'siamese',
+                  text: 'Siamese',
+                  children: undefined
+                },
+                {
+                  value: 'Persian',
+                  text: 'Persian',
+                  children: undefined
+                },
+                {
+                  value: 'scottishFold',
+                  text: 'Scottish Fold',
+                  children: undefined
+                },
+                {
+                  value: 'ragdoll',
+                  text: 'Ragdoll',
+                  children: undefined
+                },
+                {
+                  value: 'bengal',
+                  text: 'Bengal',
+                  children: undefined
+                }
+              ]
+            }
+          }
+        ]
+      };
+    </script>
+    <div
+      class="component filters js-filters"
+      data-property-name="filtersDemo"
+    >
+    
+      <div class="row filters__row">
+        <div class="col-md-6 col-lg-3 filter__col">
+          <button class="filters__button button button--form button--inline" disabled>
+            <span class="button__text">Show Location</span>
+            <span class="button__icon">
+              <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" tabindex="-1" title="GpsNotFixed"><path d="M20.94 11c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="component table__wrapper js-table"
       data-endpoint="json/data.json"
     >
       <div class="table__frame">
