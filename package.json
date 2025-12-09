@@ -1,0 +1,19 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "Playground or sandbox space",
+  "main": "index.js",
+  "scripts": {
+    "version": "echo 'version script called'" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasmakhija/sandbox.git"
+  },
+  "author": "Nicholas Makhija",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicholasmakhija/sandbox/issues"
+  },
+  "homepage": "https://github.com/nicholasmakhija/sandbox#readme"
+}
