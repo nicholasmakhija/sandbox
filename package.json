@@ -1,5 +1,5 @@
 {
-  "name": "sandbox",
+  "name": "@n3e/sandbox",
   "version": "1.0.0",
   "description": "Playground or sandbox space",
   "main": "index.js",
