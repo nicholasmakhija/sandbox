@@ -4,7 +4,8 @@
   "description": "Playground or sandbox space",
   "main": "index.js",
   "scripts": {
-    "version": "echo 'version script called'" 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "echo \"version script called\"" 
   },
   "repository": {
     "type": "git",
